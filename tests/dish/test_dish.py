@@ -6,7 +6,8 @@ from src.models.ingredient import Ingredient, Restriction
 # Req 2
 def test_dish():
     # Garante que o nome passado no construtor está correto no atributo name
-    # Garante que o operador de igualdade identifique pratos iguais e diferentes
+    # Garante que o operador de igualdade identifique
+    # pratos iguais e diferentes
     dish = Dish('sururu', 25)
     dish2 = Dish("Hambúrguer", 19.99)
     dish3 = Dish("Hambúrguer", 19.99)
@@ -26,7 +27,8 @@ def test_dish():
     assert hash(dish1) == hash(dish2)
     assert hash(dish1) != hash(dish3)
 
-    # Garante que o método add_ingredient_dependency tenha o comportamento esperado
+    # Garante que o método add_ingredient_dependency tenha
+    # o comportamento esperado
     dish = Dish("Sushi", 42.99)
     ingredient1 = Ingredient("arroz")
     ingredient2 = Ingredient("peixe")
